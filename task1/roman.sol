@@ -22,8 +22,8 @@ contract roman{
         romanMap["CM"] = 900;
     }
 
-    function romanToNum(string calldata roman) public view returns (uint){
-        bytes calldata by = bytes(roman);
+    function romanToNum(string calldata roman1) public view returns (uint){
+        bytes calldata by = bytes(roman1);
         uint len = by.length;
         uint res =0;
         for(uint i = 0; i < len; i++){
